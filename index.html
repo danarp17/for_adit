@@ -1,0 +1,97 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<link href="https://htmlku.com/akuakan/play/style.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <title>Script HTML Dari Aku Untukmu - feeldream</title>
+  <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png">
+  <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+  
+</head>
+
+<body>
+
+  <div id="bodyblur">
+    <!-- Wallpaper / Background --><img src="https://i.ibb.co/gPF2XhZ/b8fbc39ff32d93a15ce23fe9146e2387.webp"
+      id="wallpaper" />
+  </div>
+
+  <div class="kumpulanstiker">
+    <!-- Stiker untuk Konten -->
+    <img src="1.gif" id="stiker1" />
+    <img src="2.gif" id="stiker2" />
+    <img src="3.gif" id="stiker3" />
+    <img src="4.gif" id="stiker4" />
+
+    <div id='Content'>
+
+      <div id="suratin" onClick="memulai();audio.play();">
+        <!-- Surat --><img src="1.gif" />
+      </div>
+      <p id="ket">Klik Amplopnya!</p>
+
+      <div>
+        <!-- Foto Akhir -->
+        <img src="5.gif" id="fotoakhir" />
+        <img src="https://feeldreams.github.io/gumush.gif" id="fotoakhir2" />
+      </div>
+      <div>
+        <blockquote id='bq'>
+          <p id="kalimat"></p>
+          <p id="kalimatc"></p>
+        </blockquote>
+      </div>
+
+      <!-- Tombol Kirim Pesan -->
+      <div id="Tombol">
+        <a onClick="sjawab()">
+          <b>💌 Balas</b>
+        </a>
+      </div>
+
+    </div>
+
+    <script src="https://htmlku.com/akuakan/play/script.js"></script>
+
+    <script type="text/javascript">
+      async function pertama() {
+        audio = new Audio('https://audio.jukehost.co.uk/5VfcVfr1D3fIU8m27X85m5HVkPyRIhQr'); showDiv();
+      } pertama();
+
+
+      async function pesan() {
+        await swalst.fire({
+          title: 'Hii Adit! 🤔',
+          imageUrl: '' + stiker1.src,
+        });
+
+        await swalst.fire({
+          title: 'Maaf ya Kalo Aku<br>Suka Spam2 yang gk jelas ke kamu 🫠',
+          imageUrl: '' + stiker2.src,
+        });
+
+        await swalst.fire({
+          title: 'Dan kadang kadang mengganggumu 🫠',
+          imageUrl: '' + stiker3.src,
+        });
+
+        await swalst.fire({
+          title: 'Aku Cuma Mau Bilang.. 🫶',
+          imageUrl: '' + stiker4.src,
+        });
+
+        katangetik = "<b class='putih merah fontalt'>Semangat ya</b> Dan jangan putus asa ya<br>Hadapi semua rintangan ya,<br><br>Dengan sekuat tenagamu dan berbagai macam caramu,<br><br>Dan 1 lagi pesanku tolong jangan malas mandi ya,<br><br>Walau... itu hanya 1x dalam 1 hari 🥰";
+        katangetik2 = "<i>Go adit go Adit gooo</i> 🥳🥳🥳]";
+
+        setTimeout(kpemb, 200);
+      }
+    </script>
+</body>
+
+</html>
